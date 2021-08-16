@@ -1,26 +1,4 @@
-@font-face {
-	font-family: 'Open Sans bold';
-	src: url('./Assets/fonts/OpenSans-Bold.ttf');
-}
 
-@font-face {
-	font-family: 'Open Sans light';
-	src: url('./Assets/fonts/OpenSans-Light.ttf');
-}
-@font-face {
-	font-family: 'Whitney Light';
-	src: url('./Assets/fonts/whitneylight.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Whitney Medium';
-	src: url('./Assets/fonts/whitneymedium.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Whitney Bold';
-	src: url('./Assets/fonts/whitneybold.woff') format('woff');
-}
 @font-face {
 	font-family: 'SFNSText Bold';
 	src: url('./Assets/fonts/San Francisco/otf/SFNSText-Bold.otf') format('woff');
@@ -314,6 +292,21 @@ section {
 	padding:0.8rem;
 	width:100%;
 }
+/*gallery*/
+.gallery-grid{
+	display:grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-gap:2rem;
+}
+.gallery-text,.gallery-slide{
+	grid-column: span 6;
+}
+.gallery-text{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
 @media screen and (min-width: 768px) {
 	:root {
 		--hero-background-color: #f8f8f1;
@@ -428,6 +421,15 @@ section {
         color:var(--off-white-clr);
         border-radius: 3rem;
     }
+	.gallery-text{
+		grid-column: span 3;
+	}
+	.gallery-slide{
+		grid-column: span 3;
+	}
+	.slider-img{
+		height:300px;
+	}
 }
 
 @media screen and (max-width: 768px) {
