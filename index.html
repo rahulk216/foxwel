@@ -81,18 +81,18 @@
     <section class="container gallery">
         <div class="  title-group">
             <p class='s2-tcolor'>Why Foxwel?</p>
-            
+            <h2>Gallery</h2>
         </div>
         <div class="gallery-grid">
             <div class="gallery-text">
-                <div class="  title-group">
-                    <h2>Gallery</h2>
+                <div class="container title-group">
+                    
                     <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
                 </div>
             </div>
             <div class="gallery-slide">
                 <div class="gallery-slider">
-                   <div class="splide">
+                   <div id='gallery-slider' class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -164,6 +164,7 @@
                 <p class="s4-text">I only just started freelancing this year and I have already made more than I ever made in my full time job. The templates are just so amazing.</p>
                 
             </div>
+        </div>
     </section>
     <section class=" container section-3">
         <div class="">
@@ -182,12 +183,80 @@
             </div>
         </div>
     </section>
-    <section class="team">
-        <div class="container title-group">
+    <section class="container gallery">
+        <div class="  title-group">
+            <p class='s2-tcolor'>Why Foxwel?</p>
             <h2>Our Team</h2>
         </div>
-        <div class="team-slide">
-
+        <div class="gallery-grid">
+            <div class="gallery-text order1">
+                <div class="container title-group">
+                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                </div>
+            </div>
+            <div class="gallery-slide order2">
+                <div class="gallery-slider">
+                   <div id='team-slider' class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner1.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner2.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner3.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner4.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner2.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img  src="./Assets/banner4.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="title-group">
+            <h2>Our Socials</h2>
+        </div>
+        <div class="s4-grid">
+            <div class="s4-grid-item facebook">
+                <div class="s4-img-grid">
+                    <i class="fab fa-2x fa-facebook-f"></i>
+                    <div class="s4-name">
+                        <p style='font-style: italic;font-size: 12px;'>2017-08-19 12:17:55</p>
+                    </div>
+                </div>
+                <p class="s4-text padding">Setting up my portfolio with Fiber took no more than 10 minutes. Since then , my portfolio has attracted a lot of clients and made me more than $100k.</p>
+            </div>
+            <div class="s4-grid-item twitter">
+                <div class="s4-img-grid">
+                    <i class="fab fa-2x fa-twitter"></i>
+                    <div class="s4-name">
+                        <p style='font-style: italic;font-size: 12px;'>2017-08-19 12:17:55</p>      
+                    </div>      
+                </div>
+                <p class="s4-text padding">I have been getting a lot of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
+            </div>
+            <div class="s4-grid-item instagram">
+                <div class="s4-img-grid">
+                    <i class="fab fa-2x fa-instagram"></i>
+                    <div class="s4-name">
+                        <p style='font-style: italic; font-size: 12px;'>2017-08-19 12:17:55</p>     
+                    </div>                 
+                </div>
+                <p class="s4-text padding">I only just started freelancing this year and I have already made more than I ever made in my full time job. The templates are just so amazing.</p>              
+            </div>
+        </div>
         </div>
     </section>
     <footer class=" main-footer">
@@ -222,7 +291,6 @@
                 <div class="footer-group">
                     <h3>Brand Pages</h3>
                     <p>Foxwel Marketing</p>
-                    <p>Foxwel Model Management</p>
                     <p>Foxwel Music</p>
                     <p>Foxwel Web</p>
                     <p>Foxwel Productions</p>
@@ -236,11 +304,7 @@
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
-        new Splide( '.splide',{
-            width:'100%',
-            arrows: false,
-            autoplay:true
-        } ).mount();
+       
     </script>
 </body>
 </html>
