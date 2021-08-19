@@ -49,47 +49,40 @@
         </div>
    
     </section>
-    <section class="container gallery">
-        <div class="  title-group">
-            <p class='s2-tcolor'>Why Foxwel?</p>
-            <h2>Our Team</h2>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-text order1">
-                <div class="container title-group">
-                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                </div>
+    
+    <section class="career-container career-section">
+        <h1 class="section-title">Jobs</h1>
+        <div class="grid-container">
+          <div class="grid-a">
+            <h1 class="filter-text" >Filter by <i class="fas fa-filter" aria-hidden="true"></i></h1>
+            <div class="collapsable-group">
+              <button class="collapsible">JOB TYPE</button>
+              <div class="collapsecontent">
+                <ul class="list jt-list">
+                </ul>
+              </div>
+              <button class="collapsible">JOB DOMAIN</button>
+              <div class="collapsecontent">
+                <ul class="list jd-list">
+                  <li class="list__item">
+                    <label class="label--radio">
+                      <input type="radio" class="radio" name="jobdomain" value="" onclick="filterOnJobChange()" checked>
+                      All
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="gallery-slide order2">
-                <div class="gallery-slider">
-                   <div id='team-slider' class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide ">
-                                <img class='team-img' src="./Assets/team (1).png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img class='team-img' src="./Assets/team (2).png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img class='team-img' src="./Assets/team (3).png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img class='team-img' src="./Assets/team (4).png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img class='team-img' src="./Assets/team (5).png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img class='team-img'  src="./Assets/team (6).png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>   
-            </div>
+          </div>
+      <div class="grid-b">
+        <div class='career-card-container'>
+          <div class="no-jobs-available">
+            <h3>Sorry! Couldn't find a match <i class="fa fa-frown-o" aria-hidden="true"></i></h3>
         </div>
-    </section>
+        </div>
+      </div>
+    </div>  
+  </section>
     <section>
         <footer class=" main-footer">
             <div class="container footer-grid">
