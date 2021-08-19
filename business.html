@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" href="./Assets/logo.png">
+    <title>Foxwel Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <header class="main-header">
+          
+            <nav class="main-nav">
+                <a class='' href="index.html">
+                    <img src="./Assets/logo.png" class='main-logo' alt="">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="business.html" class="nav-link">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    
+                </ul>
+                <div class="nav-items-right">
+                    <span class="mobile-toggle">
+                        <img src="./assets/Hamburger Menu.svg" alt="">
+                    </span>
+                </div>
+            </nav>
+        </header>
+        <div class="row   container">
+            <img class="grid-image" src="./Assets/ventures logo.png" alt="">
+            <div class="title-group">
+                <h2>Foxwel is built with the excitement of being a slice of your blissful journey!</h2>
+                <p>Everything Seeks Attention And Foxwel Is Listening. At Foxwel, We Experience The Change In Visual Desires By Creating Extraordinary From The Ordinary.</p>
+                <div class="hero-btn-grp">
+                    <a href="#" class='hero-btn'>Want to get in touch?</a>    
+                </div>
+            </div>
+        </div>
+   
+    </section>
+    <section class="business">
+        <div class="container title-group">
+            <h2>Business</h2>
+            <p class='s2-tcolor'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolore.</p>
+        </div>
+        <!--Modal start-->
+        <div id="business-brandPopup" class="business-brandPopup">
+            <a class="business-brandPopup-closebtn" onclick="closePopup()">&times;</a>
+            <div class="business-brandPopup-content">
+                <h2 id="business-brandPopup-title"></h2>
+                <p id="business-brandPopup-body"></p>
+            </div>
+        </div>
+        <!--Modal ends-->
+        <div class="container business-grid center">
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/1.png" alt="">
+                    <div class="hover-content">
+                        <h3>Foxwel Films</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/2.png" alt="">
+                   
+                    <div class="hover-content">
+                        <h3>Foxweb</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>                
+            </div>
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/8.png" alt="">
+                    
+                    <div class="hover-content">
+                        <h3>Stage By foxwel</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/4.png" alt="">
+
+                    <div class="hover-content">
+                        <h3>Foxwel Productions</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/5.png" alt="">
+                    <div class="hover-content">
+                        <h3>Foxwel Marketing</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="business-grid-item">
+                <div class="business-img">
+                    <img src="./Assets/business/7.png" alt="">
+                    <div class="hover-content">
+                        <h3>Foxwel Music</h3>
+                        <button onclick="openModal(this)" data-title="Foxwel Films" data-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, consequuntur?" >Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" main-footer">
+        <div class="container footer-grid">
+            <div class="footer-grid-item grid1">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/foxwelproductions/" target="_blank"><i
+                        class="fab fa-3x fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCk2nT0mIof3o6eSEZ8Ep_Bg" target="_blank"><i
+                            class="fab fa-3x fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/foxwelventures/" target="_blank"><i
+                            class="fab fa-3x fa-instagram"></i></a>
+                </div>
+                <div class="contact-input">
+                    <input type="text" placeholder='Enter your Email id to subscribe' class="text">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <img src="./Assets/logo.png" class='logo' alt="">
+            </div>
+            <div class="footer-grid-item grid4">
+                <div class="footer-group">
+                    <h3>Quick Links</h3>
+                    <p>Business</p>
+                    <p>About Us</p>
+                    <p>Gallery</p>
+                    <p>Testimonials</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <div class="footer-grid-item grid5">
+                <div class="footer-group">
+                    <h3>Brand Pages</h3>
+                    <p>Foxwel Marketing</p>
+                    <p>Foxwel Music</p>
+                    <p>Foxwel Web</p>
+                    <p>Foxwel Productions</p>
+                    <p>Foxwel Films</p>
+                    <p>Stage By Foxwel</p>
+                    <p>Fatfox</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</body>
+</html>
