@@ -47,9 +47,48 @@
                 </div>
             </div>
         </div>
-   
     </section>
-    
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal-title">
+                <h1></h1>
+                <a class="modal-closebtn" onclick="closePopup()">&times;</a>
+            </div>
+            <div class="modal-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay apply-overlay">
+      <div class="modal apply-modal">
+          <div class="modal-title apply-title">
+              <h1></h1>
+              <a class="modal-closebtn" onclick="closePopup()">&times;</a>
+          </div>
+          <div class="modal-content apply-content">
+              
+            <form name="career" id="career" enctype="multipart/form-data">
+                <input type="hidden" name="formType" value="career">
+              <label class="job-apply-text"  for="name">Full Name<span class="required">*</span></label>
+              <input class="job-apply" name="name" type="text" placeholder="Enter your Full name" required>
+              <label class="job-apply-text"  for="phone">Phone<span class="required">*</span></label>
+              <input class="job-apply" name="phone" type="tel" placeholder="Enter your mobile number" required>
+              <label class="job-apply-text" for="email">Email ID<span class="required">*</span></label>
+              <input class="job-apply" name="email" type="email" placeholder="Enter you email address" required>
+              <div class="file-upload">
+              <label class="job-apply-text" for="choose">Upload your Resume/CV<span class="required">*</span></label>
+              <label class="resume-upload" name="choose" for="resume" type="file">Choose a file</label>
+              <input id="resume" name="resume" type="file" onchange="checkFile(this)" required/>
+            </div>
+              <input type="submit" class="apply-submit" value="Submit">
+              <input type="hidden" name="jobid" value="">
+              <input type="hidden" name="data" value="" >
+              <input type="hidden" name="filename" value="" >
+              <input type="hidden" name="mimetype" value="" >
+            </form>
+          </div>
+      </div>
+  </div>
     <section class="career-container career-section">
         <h1 class="section-title">Jobs</h1>
         <div class="grid-container">

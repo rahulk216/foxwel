@@ -42,6 +42,43 @@ if (document.getElementById('business-brandPopup') != null) {
 }
 
 /*........CAREER..........*/
+
+/*job*/
+if(document.querySelector(".modal")!=null)
+  {
+    const modal=document.querySelector(".modal");
+    const overlay=document.querySelector(".overlay");
+    const modal_title=document.querySelector(".modal-title h1");
+    const modal_content=document.querySelector(".modal-content p");
+    
+    const amodal=document.querySelector(".apply-modal");
+    const aoverlay=document.querySelector(".apply-overlay");
+    const amodal_title=document.querySelector(".apply-title h1");
+    
+    function openModal(elem) {
+      overlay.style.display = "block";
+      modal.style.display = "block";
+      modal_title.innerText = elem.dataset.title;
+      modal_content.innerText = elem.dataset.content;
+      body.classList.add('overflow-y-hidden')
+    }
+    function openModal2(elem) {
+      aoverlay.style.display = "block";
+      amodal.style.display = "block";
+      amodal_title.innerText = elem.dataset.title;
+      document.querySelector(".apply-modal form input[name='jobid']").value=elem.dataset.jobid;
+      body.classList.add('overflow-y-hidden');
+    }
+    
+    function closePopup() {
+      modal.style.display = "none";
+      amodal.style.display="none";
+      body.classList.remove('overflow-y-hidden')
+      overlay.style.display = "none";
+      aoverlay.style.display = "none";
+    }
+  }
+  
 function openCareerModal(){
     document.getElementById("career-modal").style.display = "block";
   }
