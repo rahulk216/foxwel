@@ -6,14 +6,22 @@ const foxwel_url =
 	'https://script.google.com/macros/s/AKfycbzgo1uzGneIuxSQ1b17UKlGLuf0TLLVDQZRo9XlSdvPiSBUk3Q/exec?';
 
 document.addEventListener('DOMContentLoaded', function () {
-	if (document.getElementById('gallery-slider') != null) {
-		new Splide('#gallery-slider', {
+  	if (document.getElementById('gallery-slider-left') != null) {
+    var sec =	new Splide('#gallery-slider', {
 			width: '100%',
 			arrows: false,
 			autoplay: true,
 			infinite: true,
-		}).mount();
+		}).mount(); 
 	}
+	 if (document.getElementById('gallery-slider') != null) {
+     	var primary = new Splide('#gallery-slider-left', {
+			width: '100%',
+			autoplay: true,
+			infinite: true,
+      pagination:false
+		}).mount();
+   }
 	if (document.getElementById('team-slider') != null) {
 		new Splide('#team-slider', {
 			width: '100%',
