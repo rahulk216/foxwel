@@ -11,33 +11,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="hero">
-        <header class="main-header">
-          
+    <section class="hero business-header">
+        <header class=" main-header">
             <nav class="main-nav">
+                <div>
                 <a class='' href="index.html">
                     <img src="./Assets/logo.png" class='main-logo' alt="">
-                </a>
+                </a>         
+                </div>
                 <ul class="nav-list">
+                    <div class='close-container'>
+                        <i id='close' style='display:none;' onclick='closefxn();' class="fas fa-times nav-link "></i>
+                    </div>
+                   
                     <li class="nav-item">
                         <a href="business.html" class="nav-link">Business</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Career</a>
+                        <a href="career.html" class="nav-link">Career</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About us</a>
+                        <a href="aboutus.html" class="nav-link">About us</a>
                     </li>
                     
                 </ul>
                 <div class="nav-items-right">
                     <span class="mobile-toggle">
-                        <img src="./assets/Hamburger Menu.svg" alt="">
+                        <i id='open' onclick='openfxn();' class="fas fa-bars "></i>
+                        
                     </span>
                 </div>
             </nav>
-        </header> 
-        <div id="video-banner-section" data-section-title="Lead Story">
+        </header>
+        <div class="video-banner-section" data-section-title="Lead Story">
             <div class="business-video-banner">
                 <h1 class="text-white">Foxwel tops Brand Finance India Ranking for 2020 </h1>
                 <div class="business-video-container">
@@ -102,7 +108,7 @@
                     <img src="./Assets/business/7.png" alt="">
                     <div class="hover-content">
                         <h3>Stories by Foxwel</h3>
-                        <button onclick="openModal(this)" data-title="Stories by Foxwel" data-content="Stage by Foxwel is a unique platform developed specifically to conduct virtual events, which can be licenced out to individuals or companies and customized based on their requirements. We have successfully conducted the world’s biggest GSB expo online using this solution." >Read More</button>
+                        <button onclick="openModal(this)" data-title="Stories by Foxwel" data-content="As a news-discovery platform, Stories By Foxwel brings out the latest trends and happenings across the world in an easy-to-digest digital multimedia format, which allows for easy sharing. The content is carefully curated and researched by our in-house team to ensure that you get accurate and reliable information, every single time." >Read More</button>
                     </div>
                 </div>
             </div>
@@ -178,7 +184,7 @@
             </div>
             <div class="footer-grid-item grid5">
                 <div class="footer-group">
-                    <h3>Brand Pages</h3>
+               
                     <p>Foxwel Marketing</p>
                     <p>Foxwel Music</p>
                     <p>Foxwel Web</p>

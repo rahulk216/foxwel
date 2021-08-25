@@ -12,27 +12,33 @@
 </head>
 <body>
     <section class="hero">
-        <header class="main-header">
-          
+        <header class=" main-header">
             <nav class="main-nav">
+                <div>
                 <a class='' href="index.html">
                     <img src="./Assets/logo.png" class='main-logo' alt="">
-                </a>
+                </a>         
+                </div>
                 <ul class="nav-list">
+                    <div class='close-container'>
+                        <i id='close' style='display:none;' onclick='closefxn();' class="fas fa-times close nav-link "></i>
+                    </div>
+                   
                     <li class="nav-item">
                         <a href="business.html" class="nav-link">Business</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Career</a>
+                        <a href="career.html" class="nav-link">Career</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About us</a>
+                        <a href="aboutus.html" class="nav-link">About us</a>
                     </li>
                     
                 </ul>
                 <div class="nav-items-right">
                     <span class="mobile-toggle">
-                        <img src="./assets/Hamburger Menu.svg" alt="">
+                        <i id='open' onclick='openfxn();' class="fas fa-bars open"></i>
+                        
                     </span>
                 </div>
             </nav>
@@ -177,7 +183,7 @@
                 </div>
                 <div class="footer-grid-item grid5">
                     <div class="footer-group">
-                        <h3>Brand Pages</h3>
+                      
                         <p>Foxwel Marketing</p>
                         <p>Foxwel Music</p>
                         <p>Foxwel Web</p>

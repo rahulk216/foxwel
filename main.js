@@ -1,9 +1,37 @@
-const url =
-	'https://script.google.com/macros/s/AKfycbwUjnLzkgucnFCvfjaXzCVTqwbzwvdT9w6nDigCJw__Zu3rlH9N/exec?';
+const url ='https://script.google.com/macros/s/AKfycbwUjnLzkgucnFCvfjaXzCVTqwbzwvdT9w6nDigCJw__Zu3rlH9N/exec?';
 let careerList;
 const name_card = document.querySelectorAll('.about-flip-card-inner');
-const foxwel_url =
-	'https://script.google.com/macros/s/AKfycbzgo1uzGneIuxSQ1b17UKlGLuf0TLLVDQZRo9XlSdvPiSBUk3Q/exec?';
+const foxwel_url = 'https://script.google.com/macros/s/AKfycbzgo1uzGneIuxSQ1b17UKlGLuf0TLLVDQZRo9XlSdvPiSBUk3Q/exec?';
+
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const navlinks = document.querySelector('.nav-list');
+
+const open_link = document.querySelector('.open');
+const close_link = document.querySelector('.close')
+
+console.log(open_link,close_link)
+
+open_link.addEventListener('click',()=>{
+  close.style.display = 'block';
+    navlinks.classList.add('active');
+})
+
+close_link.addEventListener('click',()=>{
+  open.style.display = 'block';
+    navlinks.classList.remove('active');
+})
+
+// function openfxn () {
+//   close.style.display = 'block';
+//   navlinks.classList.add('active');
+// }
+
+// function closefxn () {
+//   open.style.display = 'block';
+//   navlinks.classList.remove('active');
+
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
   	if (document.getElementById('gallery-slider-left') != null) {
@@ -12,12 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			arrows: false,
 			autoplay: true,
 			infinite: true,
+      pagination:false
 		}).mount(); 
 	}
 	 if (document.getElementById('gallery-slider') != null) {
      	var primary = new Splide('#gallery-slider-left', {
 			width: '100%',
 			autoplay: true,
+      arrows: false,
 			infinite: true,
       pagination:false
 		}).mount();
