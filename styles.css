@@ -1194,11 +1194,13 @@ li{
 	.nav-list {
 		display: flex;
 		list-style: none;
+		position:static;
 		justify-content: space-around;
 		margin: auto;
+		flex-wrap: wrap;
+		align-content:center;
+		justify-content: center;
 		width: 100%;
-		left:0;
-		top:1%;
 		background-color: transparent;
 		transition :none;
 	}

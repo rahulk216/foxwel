@@ -10,28 +10,8 @@ const navlinks = document.querySelector('.nav-list');
 const open_link = document.querySelector('.open');
 const close_link = document.querySelector('.close')
 
-console.log(open_link,close_link)
 
-open_link.addEventListener('click',()=>{
-  close.style.display = 'block';
-    navlinks.classList.add('active');
-})
 
-close_link.addEventListener('click',()=>{
-  open.style.display = 'block';
-    navlinks.classList.remove('active');
-})
-
-// function openfxn () {
-//   close.style.display = 'block';
-//   navlinks.classList.add('active');
-// }
-
-// function closefxn () {
-//   open.style.display = 'block';
-//   navlinks.classList.remove('active');
-
-// }
 
 document.addEventListener('DOMContentLoaded', function () {
   	if (document.getElementById('gallery-slider-left') != null) {
@@ -286,3 +266,12 @@ function openCareerModal(){
     return response.json()
   }
 
+open_link.addEventListener('click',()=>{
+  close.style.display = 'block';
+    navlinks.classList.add('active');
+})
+
+close_link.addEventListener('click',()=>{
+  open.style.display = 'block';
+    navlinks.classList.remove('active');
+})
