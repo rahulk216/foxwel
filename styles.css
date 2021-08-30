@@ -33,7 +33,7 @@ html {
 body {
 	font-family: var(--main-font);
 }
-a,a:link,a:visited,a:hover,a:active{
+a{
 	text-decoration: none;
 	display: inline-block;
 	color: black;
@@ -383,6 +383,7 @@ li{
 	background-color: #000;
 	position: relative;
 	transition: 0.4s ease-out;
+	
 }
 .business-img:hover,
 .business-img:focus {
@@ -399,12 +400,13 @@ li{
 	width: 100%;
 	opacity: 0;
 	transition: 0.5s ease;
-	background-color: #000;
-	z-index: 500;
+
+	
 }
-.business-img:hover .hover-content {
-	opacity: 0.7;
+.business-img:hover .hover-content:hover {
+	opacity: 1;
 }
+
 /*modal start*/
 .business-header{
 	position: relative;
@@ -475,6 +477,7 @@ li{
 	font-size: 1.3rem;
 	padding: 0.5rem;
 	border-radius: 0.4rem;
+	border:none;
 	color: black;
 	background-color: #fff;
 	position: absolute;
@@ -1120,10 +1123,10 @@ li{
 	}
 	.main-header {
 		height: 4rem;
-		padding: 4rem 4rem;
+		padding: 3rem 3rem;
 	}
 	.main-logo {
-		height: 70px;
+		height: 60px;
 		margin: auto;
 	}
 	.row {
