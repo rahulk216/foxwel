@@ -988,12 +988,12 @@ li{
 }
 /*modal*/
 .modal {
+	width: 70vw;
 	display: none;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: fixed;
-	width: 100%;
 	padding: 35px;
 	background-color: transparent;
 	height: fit-content;
@@ -1046,10 +1046,6 @@ li{
 .radio:before {
 	width: 0.65rem;
 	height: 0.65rem;
-}
-.modal {
-	width: 30vw;
-	padding: 50px;
 }
 .modal-title h1 {
 	font-size: 20px;
@@ -1414,10 +1410,7 @@ li{
 		width: 0.65rem;
 		height: 0.65rem;
 	}
-	.modal {
-		width: 30vw;
-		padding: 50px;
-	}
+	
 	.modal-title h1 {
 		font-size: 40px;
 	}
