@@ -1,189 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="icon" href="./Assets/logo.png">
-    <title>Foxwel Ventures</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section class="hero business-header">
-        <header class=" main-header">
-            <nav class="main-nav">
-                <div>
-                <a class='' href="index.html">
-                    <img src="./Assets/logo.png" class='main-logo' alt="">
-                </a>         
-                </div>
-                <ul class="nav-list">
-                    <div class='close-container'>
-                        <i id='close' class="fas fa-times close nav-link "></i>
-                    </div>
-                   
-                    <li class="nav-item">
-                        <a href="business.html" class="nav-link">Business</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="career.html" class="nav-link">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="aboutus.html" class="nav-link">About us</a>
-                    </li>
-                    
-                </ul>
-                <div class="nav-items-right">
-                    <span class="mobile-toggle">
-                        <i id='open' class="fas fa-bars open"></i>
-                        
-                    </span>
-                </div>
-            </nav>
-        </header>
-        <div class="video-banner-section" data-section-title="Lead Story">
-            <div class="business-video-banner">
-                <h1 class="text-white">Foxwel tops Brand Finance India Ranking for 2020 </h1>
-                <div class="business-video-container">
-                    <div class="business-color-overlay"></div>
-                    <video autoplay loop muted>
-                        <source src="Assets/video.mp4" type="video/mp4">
-                    </video>
-                </div>
-               
-            </div>
-        </div>  
-    </section>
-    
-    <section class="business">
-        <div class="container title-group">
-            <h2>Our Ventures</h2>
-            <p class='s2-tcolor'>Foxwel specializes in a variety of services, and every service has a dedicated team to ensure that we always provide our customer with the best. From IT related services to Digital Marketing, from Wedding Photography to Food Delivery, we have what it takes to be your lifelong service companion</p>
-        </div>
-        <!--Modal start-->
-        <div id="business-brandPopup" class="business-brandPopup">
-            <a class="business-brandPopup-closebtn" onclick="closePopup()">&times;</a>
-            <div class="business-brandPopup-content">
-                <h2 id="business-brandPopup-title"></h2>
-                <p id="business-brandPopup-body"></p>
-            </div>
-        </div>
-        <!--Modal ends-->
-        <div class="container business-grid center">
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/2.png" alt="">
-                   
-                    <div class="hover-content">
-                        <h3>Foxweb</h3>
-                        <button onclick="openModal(this)" data-title="Foxwel IT" data-content="Fed up of the regular template-based website development agencies? At Foxwel IT, we understand the pain of not having a customized website, fully coded from ground-up. With our team of 10+ highly skilled web developers, we create stunning, responsive websites and web apps, as well as native apps to run on a number of platforms. Using React and Angular, we code sites that are fast, highly optimized and eye-catching. Oh, and did we mention we handle eCommerce website setup and maintenance as well? Need a sample of our work? You’re already seeing it. This site you are currently browsing has been completely designed by our in-house team. If you’re wondering how good our other sites are, or how we can improve your existing site, simply give us a call and we’ll sort your requirements out in no time!" >Read More</button>
-                    </div>
-                </div>                
-            </div>
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/4.png" alt="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
+		<link rel="icon" href="./Assets/logo.png" />
+		<title>Foxwel Ventures</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<section class="hero business-header">
+			<header class="main-header">
+				<nav class="main-nav">
+					<div>
+						<a class="" href="index.html">
+							<img src="./Assets/logo.png" class="main-logo" alt="" />
+						</a>
+					</div>
+					<ul class="nav-list">
+						<div class="close-container">
+							<i id="close" class="fas fa-times close nav-link"></i>
+						</div>
 
-                    <div class="hover-content">
-                        <h3>Foxwel Productions</h3>
-                        <button onclick="openModal(this)" data-title="Foxwel Productions" data-content="From capturing the memories and moments of your most beautiful day to now making magic happen, we at Foxwel Productions have transformed into providing AD commercials, company portfolios, architectural shoots and 2D/3D animated videos and many more services. Our diverse array of clientele includes - Master Plannery, Hangyo Ice creams, Kediyoor Hotels, Tandoor Express, Adkas, Nirmaan Homes, Bhargavi Builders, Inland Builders, Big Bags International Pvt Ltd amongst others.
-                        We have a team of 30 skilled and dedicated professionals working tirelessly to provide you with the best quality visual production services, brought to life using state-of-the-art, cutting-edge equipment which are used by major film studios worldwide! Partnering with us is an investment for your future. Tell the story of your growth and support your ongoing goals with us. We aim to provide you with effective results without compromising on the creativity and vision." >Read More</button>
-                    </div>
-                </div>
-               
-            </div>
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/5.png" alt="">
-                    <div class="hover-content">
-                        <h3>Foxwel Marketing</h3>
-                        <button onclick="openModal(this)" data-title="Foxwel Marketing" data-content="The debate on whether digital marketing is an art or science is never ending. However, at Foxwel Marketing, we put a full stop to this debate by making Digital Media a scientific art that has an artistic science behind it. Our team gives you stunning creatives, campaigns, visuals and more that are not just artistic but have a scientific reasoning behind why they are created the way they are.
-                        In simple terms, we create digital portfolios for people and brands to make them stand out from the crowd.  Our team of 12 bright designers, copywriters and client service managers ensure that every client’s need is taken care of on a personal level, which is why we’ve developed a working bond that’s lasted years together. Our esteemed clientele include: Tandoor Express, Ramponni, Ayurvivek, Dumpukht Biryani, Hangyo, Madhuvans Village, Kediyoor, Inland Builders, Inland Indoors and many others!" >Read More</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/7.png" alt="">
-                    <div class="hover-content">
-                        <h3>Stories by Foxwel</h3>
-                        <button onclick="openModal(this)" data-title="Stories by Foxwel" data-content="Media is the watchdog of democracy, and free press is the fundamental backbone of this country. Realizing the need for impartial journalism and to be a voice for the voiceless, we launched Stories which is a theme-based series of visual contents in static and IGTV formats, covering burning issues. In the coming days, we aim to strengthen Stories further with accurate on-ground coverage of lesser-known issues, helping bring these topics to the limelight. If you have a story which you think could be a great fit to our narrative, feel free to reach out to us. Oh, and if you haven’t seen our viral Stories video on the ‘Knights of Kudla’, head over to our page right away!" >Read More</button>
-                    </div>
-                </div>
-            </div>
-            
-           
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/10.png" alt="">
-                    <div class="hover-content">
-                        <h3>Fatfox</h3>
-                        <button onclick="openModal(this)" data-title="Fatfox" data-content="“There is no sincerer love than the love for food” – George Bernand Shaw.   
-                        A successful trial phase, that led to a full-scale launch in the month of May 2021, The Fat Fox, fondly called Fatfox is now a fast-growing food chain that has 40+ tongue-tastic varieties of dishes to choose from. Affordably priced, these dishes will satisfy your taste buds and leave you wanting for more. A varied array of mouthwatering starters and other unique savoury dishes is what makes Fatfox THE GO-TO place for anyone who wishes to have food that will delight your senses and nourish your body. Some of our popular items include The Godfather Burger, Loaded Pops, Chicken Wings and Rice Bowls. Give us a try, and we guarantee that you won't be disappointed." >Read More</button>
-                    </div>
-                </div>
-            </div>
-           
+						<li class="nav-item">
+							<a href="business.html" class="nav-link">Business</a>
+						</li>
+						<li class="nav-item">
+							<a href="career.html" class="nav-link">Career</a>
+						</li>
+						<li class="nav-item">
+							<a href="aboutus.html" class="nav-link">About us</a>
+						</li>
+					</ul>
+					<div class="nav-items-right">
+						<span class="mobile-toggle">
+							<i id="open" class="fas fa-bars open"></i>
+						</span>
+					</div>
+				</nav>
+			</header>
+			<div class="video-banner-section" data-section-title="Lead Story">
+				<div class="business-video-banner">
+					<h1 class="text-white">
+						Foxwel tops Brand Finance India Ranking for 2020
+					</h1>
+					<div class="business-video-container">
+						<div class="business-color-overlay"></div>
+						<video autoplay loop muted>
+							<source src="Assets/video.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="business-grid-item">
-                <div class="business-img">
-                    <img src="./Assets/business/9.png" alt="">
-                    <div class="hover-content">
-                        <h3>Candid Vows</h3>
-                        <button onclick="openModal(this)" data-title="Candid Vows" data-content="Marriages are made in heaven, but memories are made on earth! Candid Vows started as a dream project on August 1, 2020, where we tried to capture the precious moments of wedlock without being a financial burden on the couple or their families. At Candid Vows, we promise a perfect wedding. We not only handle photography and cinematographic videography but also handle the whole wedding from end-to-end including décor, planning, managing and scripting. And no, unlike others we do not charge a bomb for our services, which are on par with international standards with zero compromise on quality. Whether it is a creative reel of the perfect couple or a still capture of two souls in synchrony, our team of 25 members will ensure that no candid moment of your wedding is lost for eternity!" >Read More</button>
-                    </div>
-                </div>
-            </div>
+		<section class="business">
+			<div class="container title-group">
+				<h2>Our Ventures</h2>
+				<p class="s2-tcolor">
+					Foxwel specializes in a variety of services, and every service
+					has a dedicated team to ensure that we always provide our
+					customer with the best. From IT related services to Digital
+					Marketing, from Wedding Photography to Food Delivery, we have
+					what it takes to be your lifelong service companion
+				</p>
+			</div>
+			<!--Modal start-->
+			<div id="business-brandPopup" class="business-brandPopup">
+				<a class="business-brandPopup-closebtn" onclick="closePopup()"
+					>&times;</a
+				>
+				<div class="business-brandPopup-content">
+					<h2 id="business-brandPopup-title"></h2>
+					<p id="business-brandPopup-body"></p>
+				</div>
+			</div>
+			<!--Modal ends-->
+			<div class="container business-grid center">
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/2.png" alt="" />
 
-            
-        </div>
-    </section>
-    <footer class=" main-footer">
-        <div class="container footer-grid">
-            <div class="footer-grid-item grid1">
-                <div class="social-links">
-                    <a href="https://www.facebook.com/foxwelproductions/" target="_blank"><i
-                        class="fab fa-3x fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCk2nT0mIof3o6eSEZ8Ep_Bg" target="_blank"><i
-                            class="fab fa-3x fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/foxwelventures/" target="_blank"><i
-                            class="fab fa-3x fa-instagram"></i></a>
-                </div>
-                <div class="contact-input">
-                    <input type="text" placeholder='Enter your Email id to subscribe' class="text">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <img src="./Assets/logo.png" class='logo' alt="">
-            </div>
-            <div class="footer-grid-item grid4">
-                <div class="footer-group">
-                    <h3>Quick Links</h3>
-                    <p>Business</p>
-                    <p>About Us</p>
-                    <p>Gallery</p>
-                    <p>Testimonials</p>
-                    <p>Contact Us</p>
-                </div>
-            </div>
-            <div class="footer-grid-item grid5">
-                <div class="footer-group">
-               
-                    <p>Foxwel Marketing</p>
-                    <p>Foxwel Music</p>
-                    <p>Foxwel Web</p>
-                    <p>Foxwel Productions</p>
-                    <p>Foxwel Films</p>
-                    <p>Stage By Foxwel</p>
-                    <p>Fatfox</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-</body>
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Foxwel IT"
+								data-content="Fed up of the regular template-based website development agencies? At Foxwel IT, we understand the pain of not having a customized website, fully coded from ground-up. With our team of 10+ highly skilled web developers, we create stunning, responsive websites and web apps, as well as native apps to run on a number of platforms. Using React and Angular, we code sites that are fast, highly optimized and eye-catching. Oh, and did we mention we handle eCommerce website setup and maintenance as well? Need a sample of our work? You’re already seeing it. This site you are currently browsing has been completely designed by our in-house team. If you’re wondering how good our other sites are, or how we can improve your existing site, simply give us a call and we’ll sort your requirements out in no time!"
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/4.png" alt="" />
+
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Foxwel Productions"
+								data-content="From capturing the memories and moments of your most beautiful day to now making magic happen, we at Foxwel Productions have transformed into providing AD commercials, company portfolios, architectural shoots and 2D/3D animated videos and many more services. Our diverse array of clientele includes - Master Plannery, Hangyo Ice creams, Kediyoor Hotels, Tandoor Express, Adkas, Nirmaan Homes, Bhargavi Builders, Inland Builders, Big Bags International Pvt Ltd amongst others.
+                        We have a team of 30 skilled and dedicated professionals working tirelessly to provide you with the best quality visual production services, brought to life using state-of-the-art, cutting-edge equipment which are used by major film studios worldwide! Partnering with us is an investment for your future. Tell the story of your growth and support your ongoing goals with us. We aim to provide you with effective results without compromising on the creativity and vision."
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/5.png" alt="" />
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Foxwel Marketing"
+								data-content="The debate on whether digital marketing is an art or science is never ending. However, at Foxwel Marketing, we put a full stop to this debate by making Digital Media a scientific art that has an artistic science behind it. Our team gives you stunning creatives, campaigns, visuals and more that are not just artistic but have a scientific reasoning behind why they are created the way they are.
+                        In simple terms, we create digital portfolios for people and brands to make them stand out from the crowd.  Our team of 12 bright designers, copywriters and client service managers ensure that every client’s need is taken care of on a personal level, which is why we’ve developed a working bond that’s lasted years together. Our esteemed clientele include: Tandoor Express, Ramponni, Ayurvivek, Dumpukht Biryani, Hangyo, Madhuvans Village, Kediyoor, Inland Builders, Inland Indoors and many others!"
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/7.png" alt="" />
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Stories by Foxwel"
+								data-content="Media is the watchdog of democracy, and free press is the fundamental backbone of this country. Realizing the need for impartial journalism and to be a voice for the voiceless, we launched Stories which is a theme-based series of visual contents in static and IGTV formats, covering burning issues. In the coming days, we aim to strengthen Stories further with accurate on-ground coverage of lesser-known issues, helping bring these topics to the limelight. If you have a story which you think could be a great fit to our narrative, feel free to reach out to us. Oh, and if you haven’t seen our viral Stories video on the ‘Knights of Kudla’, head over to our page right away!"
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/10.png" alt="" />
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Fatfox"
+								data-content="“There is no sincerer love than the love for food” – George Bernand Shaw.   
+                        A successful trial phase, that led to a full-scale launch in the month of May 2021, The Fat Fox, fondly called Fatfox is now a fast-growing food chain that has 40+ tongue-tastic varieties of dishes to choose from. Affordably priced, these dishes will satisfy your taste buds and leave you wanting for more. A varied array of mouthwatering starters and other unique savoury dishes is what makes Fatfox THE GO-TO place for anyone who wishes to have food that will delight your senses and nourish your body. Some of our popular items include The Godfather Burger, Loaded Pops, Chicken Wings and Rice Bowls. Give us a try, and we guarantee that you won't be disappointed."
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="business-grid-item">
+					<div class="business-img">
+						<img src="./Assets/business/9.png" alt="" />
+						<div class="hover-content">
+							<button
+								onclick="openModal(this)"
+								data-title="Candid Vows"
+								data-content="Marriages are made in heaven, but memories are made on earth! Candid Vows started as a dream project on August 1, 2020, where we tried to capture the precious moments of wedlock without being a financial burden on the couple or their families. At Candid Vows, we promise a perfect wedding. We not only handle photography and cinematographic videography but also handle the whole wedding from end-to-end including décor, planning, managing and scripting. And no, unlike others we do not charge a bomb for our services, which are on par with international standards with zero compromise on quality. Whether it is a creative reel of the perfect couple or a still capture of two souls in synchrony, our team of 25 members will ensure that no candid moment of your wedding is lost for eternity!"
+							>
+								Read More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="container footer-grid">
+				<div class="footer-grid-item grid1">
+					<div class="social-links">
+						<a
+							href="https://www.facebook.com/foxwelproductions/"
+							target="_blank"
+							><i class="fab fa-3x fa-facebook-f"></i
+						></a>
+						<a href="#" target="_blank"
+							><i class="fab fa-3x fa-twitter"></i
+						></a>
+						<a
+							href="https://www.youtube.com/channel/UCk2nT0mIof3o6eSEZ8Ep_Bg"
+							target="_blank"
+							><i class="fab fa-3x fa-youtube"></i
+						></a>
+						<a
+							href="https://www.instagram.com/foxwelventures/"
+							target="_blank"
+							><i class="fab fa-3x fa-instagram"></i
+						></a>
+					</div>
+					<div class="contact-input">
+						<input
+							type="text"
+							placeholder="Enter your Email id to subscribe"
+							class="text"
+						/>
+						<i class="fas fa-envelope"></i>
+					</div>
+					<img src="./Assets/logo.png" class="logo" alt="" />
+				</div>
+				<div class="footer-grid-item grid4">
+					<div class="footer-group">
+						<h3>Quick Links</h3>
+						<p>Business</p>
+						<p>About Us</p>
+						<p>Gallery</p>
+						<p>Testimonials</p>
+						<p>Contact Us</p>
+					</div>
+				</div>
+				<div class="footer-grid-item grid5">
+					<div class="footer-group">
+						<p>Foxwel Marketing</p>
+						<p>Foxwel Music</p>
+						<p>Foxwel Web</p>
+						<p>Foxwel Productions</p>
+						<p>Foxwel Films</p>
+						<p>Stage By Foxwel</p>
+						<p>Fatfox</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	</body>
 </html>
