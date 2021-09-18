@@ -426,7 +426,7 @@ li{
 
 .business-brandPopup-content {
 	position: relative;
-	top: 25%;
+	top: 5%;
 	width: 80%;
 	margin:auto;
 	
@@ -461,8 +461,8 @@ li{
 .business-brandPopup-closebtn {
 	position: absolute;
 	cursor: pointer;
-	top: 20px;
-	right: 45px;
+	top: 25px;
+	right: 40px;
 	font-size: 60px;
 }
 /*modale ends*/
