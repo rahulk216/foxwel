@@ -81,7 +81,6 @@ section {
     font-size: 2rem;
 	color:var(--btn-color);
 }
-
 .row {
 	display: grid;
 	grid-template-columns: repeat(var(--num-of-grid-columns), 1fr);
@@ -114,19 +113,18 @@ li{
 	display: block;
 	position: fixed;
 	top:0%;
-	left:100%;
+	right:100%;
 	width: 80%;
-
 	height:100%;
 	z-index:1500;
 	opacity: 1;
 	margin:auto;
 	background-color: var(--off-white-clr);
-	border-radius: 1rem 0 0 1rem;
+	border-radius: 0 1rem 1rem 0;
 	transition: all 650ms ease-in-out;
 }
 .nav-list.active{
-	left:20%;
+	right:26%;
 }
 .nav-item{
 	text-align: center;
@@ -134,9 +132,6 @@ li{
 .nav-item a{
 	padding:2rem;
 	color:var(--btn-color);
-}
-.nav-items-right > div {
-	display: none;
 }
 .hero-btn-grp {
 	text-align: center;
@@ -434,23 +429,20 @@ li{
 	color: white;
 }
 .business-brandPopup-content h2{
-	margin-bottom:2rem;
+	margin:2rem 0;
 	text-transform: uppercase;
 	color:var(--btn-color);
 	text-align: center;
 }
 .business-brandPopup-content p{
-
 	text-align: center;
 }
 .business-brandPopup a {
-	padding: 8px;
 	text-decoration: none;
-	font-size: 36px;
+	font-size: 3rem;
 	color: white;
 	display: block;
 	transition: 0.3s;
-	margin-bottom: 1.4rem;
 }
 
 .business-brandPopup a:hover,
@@ -461,9 +453,10 @@ li{
 .business-brandPopup-closebtn {
 	position: absolute;
 	cursor: pointer;
-	top: 25px;
-	right: 40px;
+	top: 0;
+	right: 1rem;
 	font-size: 60px;
+	text-align: justify;
 }
 /*modale ends*/
 .hover-content h3 {
@@ -488,14 +481,18 @@ li{
 	place-items: center;
 }
 .business-grid {
-	display: grid;
+	display: flex;
 	grid-gap: 2rem;
-	grid-template-columns: repeat(var(--num-of-s2-grid-columns), 1fr);
+	/* grid-template-columns: repeat(var(--num-of-s2-grid-columns), 1fr); */
 	margin-top: 2rem;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .business-grid-item > * {
 	margin: 0.5rem;
+	width: 15rem;
+	border-radius: 20%;
 }
 .business-grid-item {
 	grid-column: span 4;
@@ -516,7 +513,6 @@ li{
 	display: flex;
 	overflow: hidden;
 }
-
 .video-banner-section .business-video-banner h1 {
 	z-index: 1;
 	align-content: right;
@@ -527,7 +523,6 @@ li{
 	max-width: 500px;
 	top: 45vh;
 }
-
 .video-banner-section .business-color-overlay {
 	position: absolute;
 	background-color: black;
@@ -536,18 +531,15 @@ li{
 	height: 100vh;
 	opacity: 0.4;
 }
-
 .video-banner-section .business-video-container {
 	position: absolute;
 }
-
 .video-banner-section .business-arrow {
 	position: absolute;
 	top: 85%;
 	left: 90%;
 	transform: translate(-50%, -50%);
 }
-
 .video-banner-section .business-arrow span {
 	display: block;
 	width: 25px;
@@ -558,22 +550,18 @@ li{
 	margin: -10px;
 	animation: animate 2s infinite;
 }
-
 .video-banner-section .business-arrow span:nth-child(2) {
 	animation-delay: -0.2s;
 }
-
 .video-banner-section .business-arrow span:nth-child(3) {
 	animation-delay: -0.4s;
 }
-
 .video-banner-section .business-arrow span:nth-child(4) {
 	animation-delay: -0.6s;
 }
 /*..........*/
 /*aboutus...*/
 /*..........*/
-
 .team-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -594,7 +582,7 @@ li{
 }
 .team-hover {
 	position: absolute;
-	bottom: -50px;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 40%;
@@ -613,27 +601,22 @@ li{
 .team-card p {
 	margin-top: 0.3rem;
 }
-
 .team-card .hidden {
 	margin-top: 0.5rem;
 }
-
 .team-card:hover .team-hover,
 .team-card:focus .team-hover {
 	bottom: 0;
 }
-
 .hidden h4 a{
 	color:white;
 }
 .hidden p a{
 	color:white;
 }
-
 .career-section {
 	background-color: white;
 }
-
 #career-modal {
 	width: 400px;
 	height: 400px;
@@ -648,7 +631,6 @@ li{
 	z-index: 10;
 	top: 10%;
 }
-
 .career-modal-closebtn {
 	position: absolute;
 	top: 20px;
@@ -1110,7 +1092,9 @@ li{
 		--off-white-clr: #fff;
 		--num-of-s2-grid-columns: 12;
 	}
-	
+	.team-hover {
+		bottom: -50px;
+	}
 	.business-brandPopup-content p{
 	
 		text-align: left;
@@ -1192,11 +1176,10 @@ li{
 		display: flex;
 		list-style: none;
 		position:static;
-		justify-content: space-around;
-		margin: auto;
+		justify-content: flex-start;
+		margin-left: 3rem;
 		flex-wrap: wrap;
 		align-content:center;
-		justify-content: center;
 		width: 100%;
 		background-color: transparent;
 		transition :none;
@@ -1357,7 +1340,6 @@ li{
 	.career-card-container {
 		grid-template-columns: 50% 50%;
 	}
-	
 }
 
 @media screen and (max-width: 768px) {
@@ -1440,5 +1422,65 @@ li{
 	.no-jobs-available {
 		margin: auto;
 	}
-	
+}
+.ovrflw-hide {
+	overflow-y: hidden;
+}
+.toggle-span {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	height: 80px;
+	width: 80px;
+	z-index: 1600;
+}
+.toggle-span span {
+	display: block;
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fb8e17;
+	transition: .5s;
+	box-shadow:  0 2px 2px rgba(0,0,0,.2);
+	border-radius: 30px;
+}
+.toggle-span span:nth-child(1) {
+	transform: translate(-50%,-50%)translateY(-10px);
+	border-radius: 30px;
+}
+.toggle-span span:nth-child(4) {
+	transform: translate(-50%,-50%)translateY(10px);
+	border-radius: 30px;
+}
+.toggle-span.active span:nth-child(1) {
+	transform: translate(-50%,-50%)translateY(-25px);
+	opacity: 0;
+	transition: .2s;
+	border-radius: 30px;
+}
+.toggle-span.active span:nth-child(4) {
+	transform: translate(-50%,-50%)translateY(25px);
+	opacity: 0;
+	transition: .2s;
+	border-radius: 30px;
+}
+.toggle-span.active span:nth-child(2) {
+	transform: translate(-50%,-50%) rotate(45deg);
+	transition-delay: .2s;
+}
+.toggle-span.active span:nth-child(3) {
+	transform: translate(-50%,-50%) rotate(-45deg);
+	transition-delay: .2s;
+}
+.mar-top {
+	margin-top: 2.5em;
+}
+@media screen and (min-width: 768px) {
+	.mar-top {
+		margin-top: 0;
+	}
 }

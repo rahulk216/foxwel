@@ -4,29 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" href="./Assets/logo.png">
-    <title>Foxwel</title>
+    <title>Foxwel Ventures</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="hero">
         <header class=" main-header">
             <nav class="main-nav">
-                <div>
-                <a class='' href="index.html">
-                    <img src="./Assets/logo.png" class='main-logo' alt="">
-                </a>         
-                </div>
                 <ul class="nav-list">
-                    <div class='close-container'>
-                        <i id='close' class="fas fa-times close nav-link "></i>
-                    </div>
-                   
-                    <li class="nav-item">
+                    <li class="nav-item mar-top">
                         <a href="business.html" class="nav-link">Business</a>
                     </li>
                     <li class="nav-item">
@@ -35,13 +24,19 @@
                     <li class="nav-item">
                         <a href="aboutus.html" class="nav-link">About us</a>
                     </li>
-                    
                 </ul>
                 <div class="nav-items-right">
-                    <span class="mobile-toggle">
-                        <i id='open' class="fas fa-bars open"></i>
-                        
-                    </span>
+                    <div id="navham" class="toggle-span" onclick="animationnav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div>
+                    <a class='' href="index.html">
+                        <img src="./Assets/logo.png" class='main-logo' alt="">
+                    </a>      
                 </div>
             </nav>
         </header>
@@ -55,7 +50,6 @@
                 </div>
             </div>
         </div>
-   
     </section>
     <!--Header ends-->
     <section class="section-2">
@@ -93,80 +87,79 @@
             <div class="gallery-text">
                 <div class="gallery-slider">
                     <div id='gallery-slider-left' class="splide">
-                     <div class="splide__track">
-                         <ul class="splide__list">
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">    
-                                    <h2>Lorem, ipsum dolor.</h2>               
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">
-                                    <h2>Lorem, ipsum dolor.</h2>                   
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">    
-                                    <h2>Lorem, ipsum dolor.</h2>                
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">
-                                    <h2>Lorem, ipsum dolor.</h2>
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">   
-                                    <h2>Lorem, ipsum dolor.</h2>              
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                             <li class="splide__slide">
-                                <div class="gal-container title-group">    
-                                    <h2>Lorem, ipsum dolor.</h2>              
-                                    <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
-                                </div>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">    
+                                        <h2>Lorem, ipsum dolor.</h2>               
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">
+                                        <h2>Lorem, ipsum dolor.</h2>                   
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">    
+                                        <h2>Lorem, ipsum dolor.</h2>                
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">
+                                        <h2>Lorem, ipsum dolor.</h2>
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">   
+                                        <h2>Lorem, ipsum dolor.</h2>              
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="gal-container title-group">    
+                                        <h2>Lorem, ipsum dolor.</h2>              
+                                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit molestiae error aut optio delectus aliquid quisquam veritatis vel consectetur saepe blanditiis, omnis magni maxime unde, nulla voluptates esse beatae!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                  </div>   
             </div>
             <div class="gallery-slide">
                 <div class="gallery-slider">
-                   <div id='gallery-slider' class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner1-min.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner2-min.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner3-min.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner4-min.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner2-min.jpg" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img  src="./Assets/banner4-min.jpg" alt="">
-                            </li>
-                        </ul>
+                    <div id='gallery-slider' class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner1-min.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner2-min.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner3-min.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner4-min.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner2-min.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img  src="./Assets/banner4-min.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>   
             </div>
         </div>
     </section>
-    
     <!--section 3 ends-->
     <section class="section-4">
         <div class="container title-group">
@@ -184,7 +177,6 @@
                     <i class="fas fa-quote-right"></i>
                 </div>
                 <p class="s4-text">Setting up my portfolio with Fiber took no more than 10 minutes. Since then , my portfolio has attracted a lot of clients and made me more than $100k.</p>
-                
             </div>
             <div class="s4-grid-item">
                 <div class="s4-img-grid">
@@ -196,7 +188,6 @@
                     <i class="fas fa-quote-right"></i>
                 </div>
                 <p class="s4-text">I have been getting a lot of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
-                
             </div>
             <div class="s4-grid-item">
                 <div class="s4-img-grid">
@@ -204,15 +195,14 @@
                     <div class="s4-name">
                         <p class='s2-tcolor'>Nikhil Kamath</p>
                         <p>Fatfox</p>
-                        
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
                 <p class="s4-text">I only just started freelancing this year and I have already made more than I ever made in my full time job. The templates are just so amazing.</p>
-                
             </div>
         </div>
     </section>
+    <!-- section 4 ends-->
     <section class=" container section-3">
         <div class="">
             <div class="s3-grid s3-container">
@@ -230,7 +220,7 @@
             </div>
         </div>
     </section>
-   
+    <!-- section 5 ends -->
     <section class="container">
         <div class="title-group">
             <h2>Our Socials</h2>
@@ -264,23 +254,28 @@
                 <p class="s4-text padding">I only just started freelancing this year and I have already made more than I ever made in my full time job. The templates are just so amazing.</p>              
             </div>
         </div>
-        </div>
     </section>
+    <!-- Footer start -->
     <footer id='footer' class=" main-footer">
         <div class="container footer-grid">
             <div class="footer-grid-item grid1">
                 <div class="social-links">
-                    <a href="https://www.facebook.com/foxwelproductions/" target="_blank"><i
-                        class="fab fa-3x fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCk2nT0mIof3o6eSEZ8Ep_Bg" target="_blank"><i
-                            class="fab fa-3x fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/foxwelventures/" target="_blank"><i
-                            class="fab fa-3x fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/foxwelproductions/" target="_blank">
+                        <i class="fab fa-3x fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:ventures@foxwel.com" target="_blank">
+                        <i class="fas fa-at"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCk2nT0mIof3o6eSEZ8Ep_Bg" target="_blank">
+                        <i class="fab fa-3x fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/foxwelventures/" target="_blank">
+                        <i class="fab fa-3x fa-instagram"></i>
+                    </a>
                 </div>
                 <div class="contact-input">
                     <input type="text" placeholder='Enter your Email id to subscribe' class="text">
-                    <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope"></i>
                 </div>
                 <img src="./Assets/logo.png" class='logo' alt="">
             </div>
@@ -296,7 +291,6 @@
             </div>
             <div class="footer-grid-item grid5">
                 <div class="footer-group">
-      
                     <p>Foxwel Marketing</p>
                     <p>Foxwel Music</p>
                     <p>Foxwel Web</p>
@@ -308,10 +302,8 @@
             </div>
         </div>
     </footer>
+    <!-- Footer end -->
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script>
-       
-    </script>
 </body>
 </html>

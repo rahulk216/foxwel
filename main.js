@@ -5,11 +5,13 @@ const foxwel_url = 'https://script.google.com/macros/s/AKfycbzgo1uzGneIuxSQ1b17U
 
 const open = document.getElementById('open');
 const close = document.getElementById('close');
+const navham = document.getElementById('navham');
 const navlinks = document.querySelector('.nav-list');
 
 const open_link = document.querySelector('.open');
 const close_link = document.querySelector('.close')
-
+const body = document.querySelector('body');
+const toggleanimation = document.querySelector('.toggle-span')
 
 
 
@@ -52,13 +54,13 @@ if (document.getElementById('business-brandPopup') != null) {
 	function openModal(elem) {
 		modal.style.width = '100%';
 		modal_title.innerText = elem.dataset.title;
-		modal_content.innerText = elem.dataset.content;
-		body.classList.add('overflow-y-hidden');
+		modal_content.innerHTML = elem.dataset.content;
+		body.classList.add('ovrflw-hide');
 	}
 
 	function closePopup() {
 		modal.style.width = '0%';
-		body.classList.remove('overflow-y-hidden');
+		body.classList.remove('ovrflw-hide');
 	}
 }
 
@@ -269,12 +271,10 @@ function openCareerModal(){
     return response.json()
   }
 
-open_link.addEventListener('click',()=>{
-  close.style.display = 'block';
-    navlinks.classList.add('active');
-})
+/*......Navbar mobile bars animation......*/ 
 
-close_link.addEventListener('click',()=>{
-  open.style.display = 'block';
-    navlinks.classList.remove('active');
-})
+function animationnav() {
+  navham.classList.toggle('active');
+  body.classList.toggle('ovrflw-hide');
+  navlinks.classList.toggle('active');
+}
