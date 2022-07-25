@@ -1427,9 +1427,9 @@ li{
 	overflow-y: hidden;
 }
 .toggle-span {
-	position: absolute;
+	/* position: absolute;
 	top: 5%;
-	left: 10%;
+	left: 10%; */
 	transform: translate(-50%, -50%);
 	height: 80px;
 	width: 80px;
@@ -1439,9 +1439,9 @@ li{
 	display: block;
 	width: 30px;
 	height: 4px;
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 50%; */
 	transform: translate(-50%,-50%);
 	background: #fb8e17;
 	transition: .5s;
